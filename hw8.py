@@ -167,7 +167,28 @@ def findMST(M):
     """
     
     # TODO: Finish implementing this function.
-
+    while findCycle(M) != None:
+        cycle = findCycle(M)
+        maxi = -1
+        maxj = -1
+        maxNumber = -1
+        
+        for k in range(len(cycle)):
+            i - cycle[k]
+            if k == len(cycle) - 1:
+                j = cycle[0]
+            else:
+                j = cycle[k+1]
+                
+            if M[i][j] > maxNumber:
+                maxNumber = M[i][j]
+                maxi = i
+                maxj = j
+                
+        M[maxi][maxj] = None
+        M[maxj][maxi] = None
+        
+        
     return M
 
 if __name__ == '__main__':
