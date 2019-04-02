@@ -174,7 +174,7 @@ def findMST(M):
         maxNumber = -1
         
         for k in range(len(cycle)):
-            i - cycle[k]
+            i = cycle[k]
             if k == len(cycle) - 1:
                 j = cycle[0]
             else:
